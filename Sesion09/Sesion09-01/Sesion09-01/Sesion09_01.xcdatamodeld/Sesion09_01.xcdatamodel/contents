@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="18G3020" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Marca" representedClassName="Marca" syncable="YES" codeGenerationType="class">
+        <attribute name="nombre" optional="YES" attributeType="String"/>
+        <attribute name="paisOrigen" optional="YES" attributeType="String"/>
+        <attribute name="urlWeb" optional="YES" attributeType="String"/>
+        <relationship name="modelos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Modelo" inverseName="marca" inverseEntity="Modelo"/>
+    </entity>
+    <entity name="Modelo" representedClassName="Modelo" syncable="YES" codeGenerationType="class">
+        <attribute name="fabricacion" optional="YES" attributeType="String"/>
+        <attribute name="nombre" optional="YES" attributeType="String"/>
+        <attribute name="tipoCarroceria" optional="YES" attributeType="String"/>
+        <relationship name="marca" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Marca" inverseName="modelos" inverseEntity="Marca"/>
+    </entity>
+    <elements>
+        <element name="Marca" positionX="-659.90625" positionY="35.29296875" width="128" height="103"/>
+        <element name="Modelo" positionX="-441.515625" positionY="124.12109375" width="128" height="103"/>
+    </elements>
+</model>

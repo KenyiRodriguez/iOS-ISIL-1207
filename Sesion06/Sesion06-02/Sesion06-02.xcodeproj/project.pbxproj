@@ -14,6 +14,9 @@
 		FBB397BB24775E3F00A3D888 /* Sesion06_02.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBB397B924775E3F00A3D888 /* Sesion06_02.xcdatamodeld */; };
 		FBB397BD24775E4000A3D888 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBB397BC24775E4000A3D888 /* Assets.xcassets */; };
 		FBB397C024775E4000A3D888 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB397BE24775E4000A3D888 /* LaunchScreen.storyboard */; };
+		FBB397C8247761C000A3D888 /* AlumnoBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB397C7247761C000A3D888 /* AlumnoBE.swift */; };
+		FBB397CA2477626A00A3D888 /* AlumnoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB397C92477626A00A3D888 /* AlumnoTableViewCell.swift */; };
+		FBB397CC247771C500A3D888 /* DetalleAlumnoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB397CB247771C500A3D888 /* DetalleAlumnoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		FBB397BC24775E4000A3D888 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBB397BF24775E4000A3D888 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBB397C124775E4000A3D888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBB397C7247761C000A3D888 /* AlumnoBE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlumnoBE.swift; sourceTree = "<group>"; };
+		FBB397C92477626A00A3D888 /* AlumnoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlumnoTableViewCell.swift; sourceTree = "<group>"; };
+		FBB397CB247771C500A3D888 /* DetalleAlumnoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleAlumnoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,9 @@
 				FBB397BE24775E4000A3D888 /* LaunchScreen.storyboard */,
 				FBB397C124775E4000A3D888 /* Info.plist */,
 				FBB397B924775E3F00A3D888 /* Sesion06_02.xcdatamodeld */,
+				FBB397C7247761C000A3D888 /* AlumnoBE.swift */,
+				FBB397C92477626A00A3D888 /* AlumnoTableViewCell.swift */,
+				FBB397CB247771C500A3D888 /* DetalleAlumnoViewController.swift */,
 			);
 			path = "Sesion06-02";
 			sourceTree = "<group>";
@@ -142,9 +151,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBB397BB24775E3F00A3D888 /* Sesion06_02.xcdatamodeld in Sources */,
+				FBB397C8247761C000A3D888 /* AlumnoBE.swift in Sources */,
+				FBB397CC247771C500A3D888 /* DetalleAlumnoViewController.swift in Sources */,
 				FBB397B524775E3F00A3D888 /* ViewController.swift in Sources */,
 				FBB397B124775E3F00A3D888 /* AppDelegate.swift in Sources */,
 				FBB397B324775E3F00A3D888 /* SceneDelegate.swift in Sources */,
+				FBB397CA2477626A00A3D888 /* AlumnoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
