@@ -12,6 +12,7 @@ class ModelosViewController: UIViewController {
 
     @IBOutlet weak var clvModelo: UICollectionView!
     
+    var objMarca: Marca!
     var arrayModelos = [Modelo]()
     
     override func viewDidLoad() {
@@ -21,7 +22,7 @@ class ModelosViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.arrayModelos = ModeloBL.listar()
+        self.arrayModelos = self.objMarca.modelos?.allObjects as? [Modelo] ?? []
         self.clvModelo.reloadData()
     }
 }
@@ -54,7 +55,7 @@ extension ModelosViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let cantidadColumnas: CGFloat = 2
+        let cantidadColumnas: CGFloat = 1
         let anchoCollection = collectionView.frame.width
         let paddingLeft: CGFloat = 20.0
         let paddingRight: CGFloat = 20.0

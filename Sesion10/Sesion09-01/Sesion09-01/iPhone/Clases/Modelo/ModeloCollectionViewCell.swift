@@ -21,7 +21,15 @@ class ModeloCollectionViewCell: UICollectionViewCell {
     
     func actualizarData() {
         self.lblModelo.text = self.objModelo.nombre ?? "--"
-        //TODO: descargar imagen del modelo y mostrarla
+        
+        let imgPlaceholder = UIImage(named: "placeholder")
+        
+        self.imgModelo.downloadImagenInUrl(self.objModelo.urlImagen ?? "", withPlaceHolderImage: imgPlaceholder) { (urlDescarga, imagenDescargada) in
+            
+            if urlDescarga == self.objModelo.urlImagen {
+                self.imgModelo.image = imagenDescargada
+            }
+        }
     }
     
     override func draw(_ rect: CGRect) {

@@ -33,5 +33,15 @@ class DetalleMarcaViewController: UIViewController {
         self.lblPais.text = self.objMarca.paisOrigen ?? "No especificado"
         self.btnWeb.setTitle(self.objMarca.urlWeb ?? "--", for: .normal)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let controller = segue.destination as? ModelosViewController {
+            controller.objMarca = self.objMarca
+            
+        }else if let controller = segue.destination as? AgregarModeloViewController {
+            controller.objMarca = self.objMarca
+        }
+    }
 
 }

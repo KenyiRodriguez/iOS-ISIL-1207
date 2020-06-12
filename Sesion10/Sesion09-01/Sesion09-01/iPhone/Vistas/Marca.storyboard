@@ -240,7 +240,7 @@
                                 </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dab-YH-BZL">
-                                <rect key="frame" x="0.0" y="195.5" width="414" height="700.5"/>
+                                <rect key="frame" x="0.0" y="196" width="414" height="700"/>
                                 <connections>
                                     <segue destination="gIK-wh-agV" kind="embed" id="xCf-yQ-CUc"/>
                                 </connections>
